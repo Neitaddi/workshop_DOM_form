@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+  font-family: "Verdana", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  color: #444;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 2.5em;
+  color: #003399;
+}
+
+/* Results Area */
+#results {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#results p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #555;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #66a6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #results {
+    padding: 15px;
+  }
+}

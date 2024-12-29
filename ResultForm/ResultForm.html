@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ResultForm.css" />
+  </head>
+  <body>
+    <h1>Result Form</h1>
+    <div id="results"></div>
+
+    <script>
+      const formD = [
+        {
+          age: "20",
+          email: "arij@gmail.com",
+          name: "arij",
+        },
+        {
+          age: "22",
+          email: "amira@gmail.com",
+          name: "amira",
+        },
+      ];
+      const formData = JSON.parse(localStorage.getItem("formData"));
+      console.log(formData);
+      const keys = Object.keys(formData);
+      console.log(keys);
+      const results = document.getElementById("results");
+      for (let index = 0; index < keys.length; index++) {
+        const p = document.createElement("p");
+        const key = keys[index];
+        p.textContent = `${key}: ${formData[key]}`;
+        results.appendChild(p);
+      }
+    </script>
+  </body>
+</html>
